@@ -16,11 +16,11 @@ var $description = $('input[name="description"]');
 var $priority = $('input[name="priority"]');
 var $status = $('input[name="status"]');
 // var $card = $('#card');
-$task.submit(function() {
+$card.submit(function() {
 	console.log('You submitted a new card');
 	$.ajax({
 		method: 'post',
-		url: 'http://localhost:8000/static/cards/',
+		url: 'http://localhost:8000/cards/',
 		username: 'davidmohrmann',
 		password: 'password123',
 		data: {
@@ -41,7 +41,7 @@ $task.submit(function() {
 
 	// $.ajax({
 	// 	method: 'patch',
-	// 	url: 'http://localhost:8000/static/cards/cards.html',
+	// 	url: 'http://localhost:8000/cards/',
 	// 	username: 'davidmohrmann',
 	// 	password: 'password123',
 	// 	data: {

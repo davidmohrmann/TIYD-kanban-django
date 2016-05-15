@@ -1,1 +1,1 @@
-# TIYD-kanban-django
+# TIYD Kanban-Django
