@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -15,12 +17,12 @@
 		</style>
 	</head>
 	<body>
-		<div class="fixed"><img src='gsd.png' alt="Sweet Pic, I swear"
+		<div class="fixed"><img src= "{% static "cards/gsd.png" %}" alt="Sweet Pic, I swear"
 		style="width:250px;height:200px;"></div> 
-		<p> To Do List </p>
-		<ul id='cards'>
+				<p> To Do List </p>
+		<ol type="I" id='cards'>
 			
-		</ul>
+		</ol>
 		<form id="card" action="" method="post">
 			<legend>Create Card</legend>
 			<label for="">Name</label>
@@ -57,13 +59,13 @@
 			<input type="submit" value="Edit Card">
 			<td><input type="reset" id="configreset" value="Reset"></td>
 			<p></p>
-		<form id="card" action="" method="delete">
+		<!-- <form id="card" action="" method="delete">
 			<legend>Delete Card</legend>
 			<label for="">Name</label>
 			<input type="text" name="name" value="">
 			<input type="submit" value="Delete Card">
 			<td><input type="reset" id="configreset" value="Reset"></td>
-		</form>
+		</form> -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js">  
 	</script>
 		<script src="/static/cards/kanban.js"></script>

@@ -4,6 +4,7 @@ from cards import views
 
 router = routers.DefaultRouter()
 router.register(r'cards', views.CardsViewSet)
+router.register(r'api/cards', views.MasterViewSet)
 
 # Wire up our API using automatic URL routing.
 # Additionally, we include login URLs for the browsable API.
